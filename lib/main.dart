@@ -104,7 +104,7 @@ class _Page2 extends ConsumerWidget {
     return Card(
         child: ListTile(
             leading: themeMode.icon,
-            title: Text(themeMode.displayName),
+            title: Text('${themeMode.displayName}にする'),
             subtitle: Text(themeMode.description),
         onTap: () => ref.read(themeProvider.notifier).change(themeMode)));
   }
